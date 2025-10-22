@@ -1,0 +1,220 @@
+/* Estilos generales */
+body {
+    background-color: #f8f9fa !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #333;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Estilos del navbar */
+.navbar {
+    justify-content: space-between !important;
+    flex-wrap: wrap;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #6c757d !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem !important;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+    background-color: #f8f9fa;
+}
+
+/* Estilos del formulario de búsqueda */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-input {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    width: 200px;
+}
+
+.search-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Estilos de las secciones de productos */
+.catalog-section {
+    margin: 2rem 0;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.catalog-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.catalog-table td {
+    padding: 2rem;
+    vertical-align: middle;
+}
+
+.catalog-image {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.catalog-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.catalog-text {
+    padding: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    background-color: #495057;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.suscripcion-form {
+    background-color: #6c757d;
+    border-radius: 10px;
+    padding: 2rem;
+    color: white;
+}
+
+.suscripcion-form input[type="text"],
+.suscripcion-form input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.suscripcion-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .navbar-nav {
+        gap: 0.25rem;
+    }
+    
+    .nav-link {
+        padding: 0.25rem 0.5rem !important;
+        font-size: 0.9rem;
+    }
+    
+    .catalog-table td {
+        padding: 1rem;
+    }
+    
+    .catalog-image {
+        max-width: 80%;
+    }
+    
+    .search-input {
+        width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .navbar-nav {
+        justify-content: center;
+    }
+    
+    .search-form {
+        justify-content: center;
+    }
+    
+    .catalog-table {
+        display: block;
+    }
+    
+    .catalog-table tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .catalog-table td {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .catalog-image {
+        max-width: 90%;
+        margin-bottom: 1rem;
+    }
+}
