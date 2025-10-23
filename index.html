@@ -8,12 +8,36 @@
   <meta name="keywords" content="Motos, deportiva, urbana, todoterreno">
   <link rel="icon" href="Image/logo.ico" type="image/x-icon">
   <title>Motos Perú</title>
-  
+
   <!-- Bootstrap CSS -->
   <link href="CSS/bootstrap.min.css" rel="stylesheet">
-  
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- Custom Styles for Tables -->
+  <style>
+    /* Oculta los bordes de las tablas de especificaciones */
+    .catalog-text table {
+    border-collapse: collapse;
+    }
+    .catalog-text table,
+    .catalog-text th,
+    .catalog-text td {
+    border: none;
+    }
+    /* Asegura que el contenido de la tabla sea visible y bien espaciado */
+    .catalog-text th,
+    .catalog-text td {
+    padding: 8px;
+    text-align: left;
+    }
+    /* Estilo adicional para el encabezado de las tablas */
+    .catalog-text thead th {
+    background-color: transparent;
+    font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
@@ -27,7 +51,7 @@
           </a>
         </div>
       </div>
-      
+
       <div class="row align-items-center">
         <div class="col-lg-8 col-md-7">
           <nav class="navbar">
@@ -43,7 +67,7 @@
             </div>
           </nav>
         </div>
-        
+
         <div class="col-lg-4 col-md-5">
           <form class="search-form d-flex justify-content-end" action="/buscar" method="get">
             <input class="search-input form-control" type="search" name="q" placeholder="Buscar...">
@@ -60,21 +84,47 @@
         <em>Busca tu moto por estilo</em>
       </p>
     </div>
-    
+
     <section class="mb-5">
       <h2 class="mb-4">Catálogo</h2>
-      
+
       <!-- Producto 1 -->
       <div class="catalog-section">
         <table class="catalog-table">
           <tr>
             <td class="col-md-6">
-              <img class="catalog-image" height="400" src="Image/cfmoto_450mt_toterreno.png" alt="CFMoto 450MT Todoterreno">
+              <img class="catalog-image" height="400" src="Image/cfmoto_450mt_toterreno.png"
+              alt="CFMoto 450MT Todoterreno">
             </td>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam impedit ut sint aspernatur voluptates aut
-                quaerat consequuntur possimus obcaecati dolore provident ipsum assumenda debitis vel totam dolorum, autem
-                dolorem porro?</p>
+              <h2 style="text-align: center;">CFMoto 450MT - Especificaciones Técnicas</h2>
+
+              <table>
+                <tr>
+                  <th>Categoría</th>
+                  <th>Detalle</th>
+                </tr>
+                <tr>
+                  <td>Motor</td>
+                  <td>449.5 cc, DOHC, 4 válvulas, refrigerado por líquido</td>
+                </tr>
+                <tr>
+                  <td>Potencia</td>
+                  <td>Aprox. 49 HP a 9000 rpm</td>
+                </tr>
+                <tr>
+                  <td>Transmisión</td>
+                  <td>6 velocidades</td>
+                </tr>
+                <tr>
+                  <td>Tipo</td>
+                  <td>Motocicleta tipo naked / trail</td>
+                </tr>
+                <tr>
+                  <td>Neumáticos</td>
+                  <td>Delantero: 110/80-R19 | Trasero: 130/80-R17</td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
@@ -85,8 +135,34 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">CFMoto 675NK - Especificaciones Técnicas</h2>
+
+              <table>
+                <tr>
+                  <th>Categoría</th>
+                  <th>Detalle</th>
+                </tr>
+                <tr>
+                  <td>Marca</td>
+                  <td>CFMoto</td>
+                </tr>
+                <tr>
+                  <td>Modelo</td>
+                  <td>675NK</td>
+                </tr>
+                <tr>
+                  <td>Cilindrada</td>
+                  <td>675 cc</td>
+                </tr>
+                <tr>
+                  <td>Tipo de Moto</td>
+                  <td>Naked</td>
+                </tr>
+                <tr>
+                  <td>Año de Fabricación</td>
+                  <td>2022 - 2024 (aprox.)</td>
+                </tr>
+              </table>
             </td>
             <td class="col-md-6">
               <img class="catalog-image" height="400" src="Image/cfmoto_675nk_urba.png" alt="CFMoto 675NK Urbana">
@@ -100,11 +176,39 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6">
-              <img class="catalog-image" height="400" src="Image/cfmoto_675SR-R_depor.png" alt="CFMoto 675SR-R Deportiva">
+              <img class="catalog-image" height="400" src="Image/cfmoto_675SR-R_depor.png"
+              alt="CFMoto 675SR-R Deportiva">
             </td>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">CFmoto 675SR-R - Especificaciones
+              Tecnicas</h2>
+
+              <table>
+                <tr>
+                  <th>Categoría</th>
+                  <th>Valor</th>
+                </tr>
+                <tr>
+                  <td>Marca</td>
+                  <td>CFMoto</td>
+                </tr>
+                <tr>
+                  <td>Modelo</td>
+                  <td>675SR-R</td>
+                </tr>
+                <tr>
+                  <td>Cilindrada</td>
+                  <td>675 cc</td>
+                </tr>
+                <tr>
+                  <td>Tipo de Moto</td>
+                  <td>Superportiva / Deportiva</td>
+                </tr>
+                <tr>
+                  <td>Año de Fabricación</td>
+                  <td>2024 (aprox.)</td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
@@ -115,11 +219,39 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">Ducati Diavel V4 -
+              Especificaciones Tecnicas</h2>
+
+              <table>
+                <tr>
+                  <th>Categoría</th>
+                  <th>Valor</th>
+                </tr>
+                <tr>
+                  <td>Modelo</td>
+                  <td>Diavel V4</td>
+                </tr>
+                <tr>
+                  <td>Motor</td>
+                  <td>V4 Granturismo 1158 cc</td>
+                </tr>
+                <tr>
+                  <td>Potencia</td>
+                  <td>208 CV a 10,750 rpm</td>
+                </tr>
+                <tr>
+                  <td>Peso</td>
+                  <td>203 kg (en seco)</td>
+                </tr>
+                <tr>
+                  <td>Tipo de Moto</td>
+                  <td>Cruiser / Muscle Bike</td>
+                </tr>
+              </table>
             </td>
             <td class="col-md-6">
-              <img class="catalog-image" height="400" src="Image/ducati-diavel-v4_urba.png" alt="Ducati Diavel V4 Urbana">
+              <img class="catalog-image" height="400" src="Image/ducati-diavel-v4_urba.png"
+              alt="Ducati Diavel V4 Urbana">
             </td>
           </tr>
         </table>
@@ -130,11 +262,39 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6">
-              <img class="catalog-image" height="400" src="Image/ducatiMultistrada-VS4_toterreno.png" alt="Ducati Multistrada VS4 Todoterreno">
+              <img class="catalog-image" height="400" src="Image/ducatiMultistrada-VS4_toterreno.png"
+              alt="Ducati Multistrada VS4 Todoterreno">
             </td>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">Ducati Multistrada VS4 -
+              Especificaciones Tecnicas</h2>
+
+              <table>
+                <tr>
+                  <th>Categoría</th>
+                  <th>Detalles</th>
+                </tr>
+                <tr>
+                  <td>Tipo</td>
+                  <td>Adventure Touring</td>
+                </tr>
+                <tr>
+                  <td>Motor</td>
+                  <td>V4 Granturismo de 1,158 cc</td>
+                </tr>
+                <tr>
+                  <td>Potencia</td>
+                  <td>170 CV a 10,750 rpm</td>
+                </tr>
+                <tr>
+                  <td>Neumáticos</td>
+                  <td>19" delantero / 17" trasero (diseño radial)</td>
+                </tr>
+                <tr>
+                  <td>Electrónica</td>
+                  <td>Control de tracción, ABS, modos de conducción, pantalla TFT</td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
@@ -145,11 +305,39 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">Ducati Panigale V2 -
+              Especificaciones Tecnicas</h2>
+
+              <table>
+                <tr>
+                  <th>Categoría</th>
+                  <th>Valor</th>
+                </tr>
+                <tr>
+                  <td>Motor</td>
+                  <td>V2 de 959 cc</td>
+                </tr>
+                <tr>
+                  <td>Potencia</td>
+                  <td>155 hp a 10,750 rpm</td>
+                </tr>
+                <tr>
+                  <td>Peso</td>
+                  <td>173 kg (en seco)</td>
+                </tr>
+                <tr>
+                  <td>Tipo de Moto</td>
+                  <td>Superbike / Deportiva</td>
+                </tr>
+                <tr>
+                  <td>Año de Lanzamiento</td>
+                  <td>2019</td>
+                </tr>
+              </table>
             </td>
             <td class="col-md-6">
-              <img class="catalog-image" height="400" src="Image/ducatiPanigale-V2_depor.png" alt="Ducati Panigale V2 Deportiva">
+              <img class="catalog-image" height="400" src="Image/ducatiPanigale-V2_depor.png"
+              alt="Ducati Panigale V2 Deportiva">
             </td>
           </tr>
         </table>
@@ -160,11 +348,42 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6">
-              <img class="catalog-image" height="400" src="Image/kawasaki_VulcanS_urba.png" alt="Kawasaki Vulcan S Urbana">
+              <img class="catalog-image" height="400" src="Image/kawasaki_VulcanS_urba.png"
+              alt="Kawasaki Vulcan S Urbana">
             </td>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">Kawasaki Vulca S -
+              Especificaciones Tecnicas</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Categoría</th>
+                    <th>Detalle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Motor</td>
+                    <td>Bicilíndrico en paralelo, 4 tiempos, DOHC, refrigeración líquida</td>
+                  </tr>
+                  <tr>
+                    <td>Cilindrada</td>
+                    <td>649 cc</td>
+                  </tr>
+                  <tr>
+                    <td>Potencia</td>
+                    <td>61 cv</td>
+                  </tr>
+                  <tr>
+                    <td>Peso</td>
+                    <td>229 kg</td>
+                  </tr>
+                  <tr>
+                    <td>Frenos y ABS</td>
+                    <td>Disco delantero 300 mm (doble pistón) y trasero 250 mm (un pistón), con ABS</td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
           </tr>
         </table>
@@ -175,11 +394,43 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">Kawasaki Ninja H2R -
+              Especificaciones Tecnicas</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Categoría</th>
+                    <th>Detalle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Motor</td>
+                    <td>4 tiempos, 4 cilindros en línea, DOHC, 16 válvulas, sobrealimentado</td>
+                  </tr>
+                  <tr>
+                    <td>Potencia</td>
+                    <td>310 HP (314 CV) @ 14,000 rpm</td>
+                  </tr>
+                  <tr>
+                    <td>Par máximo</td>
+                    <td>165 Nm @ 12,500 rpm</td>
+                  </tr>
+                  <tr>
+                    <td>Velocidad máxima</td>
+                    <td>331 km/h (solo en circuito cerrado)</td>
+                  </tr>
+                  <tr>
+                    <td>Peso</td>
+                    <td>216 kg (en seco)</td>
+                  </tr>
+                </tbody>
+              </table>
+
             </td>
             <td class="col-md-6">
-              <img class="catalog-image" height="400" src="Image/kawasaki-ninja-h2r-2015_Depor.png" alt="Kawasaki Ninja H2R Deportiva">
+              <img class="catalog-image" height="400" src="Image/kawasaki-ninja-h2r-2015_Depor.png"
+              alt="Kawasaki Ninja H2R Deportiva">
             </td>
           </tr>
         </table>
@@ -190,11 +441,43 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6">
-              <img class="catalog-image" height="400" src="Image/kawasakiVersys_1100_Toterreno.png" alt="Kawasaki Versys 1100 Todoterreno">
+              <img class="catalog-image" height="400" src="Image/kawasakiVersys_1100_Toterreno.png"
+              alt="Kawasaki Versys 1100 Todoterreno">
             </td>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">Kawasaki Versys 1100 -
+              Especificaciones Tecnicas</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Categoría</th>
+                    <th>Detalle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Motor</td>
+                    <td>4 cilindros en línea, 4 tiempos, refrigeración líquida</td>
+                  </tr>
+                  <tr>
+                    <td>Cilindrada</td>
+                    <td>1.099 cc</td>
+                  </tr>
+                  <tr>
+                    <td>Potencia</td>
+                    <td>135 CV</td>
+                  </tr>
+                  <tr>
+                    <td>Peso</td>
+                    <td>255–259 kg (según versión)</td>
+                  </tr>
+                  <tr>
+                    <td>Tipo</td>
+                    <td>Maxitrail asfáltica orientada a viajes largos</td>
+                  </tr>
+                </tbody>
+              </table>
+
             </td>
           </tr>
         </table>
@@ -205,11 +488,43 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">Suzuki DR Z4SM -
+              Especificaciones Tecnicas</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Categoría</th>
+                    <th>Detalle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Motor</td>
+                    <td>Monocilíndrico, 4 tiempos, DOHC, refrigeración líquida</td>
+                  </tr>
+                  <tr>
+                    <td>Cilindrada</td>
+                    <td>398 cc</td>
+                  </tr>
+                  <tr>
+                    <td>Potencia</td>
+                    <td>38 CV</td>
+                  </tr>
+                  <tr>
+                    <td>Peso</td>
+                    <td>154 kg</td>
+                  </tr>
+                  <tr>
+                    <td>Tipo</td>
+                    <td>Supermotard (apta para carnet A2)</td>
+                  </tr>
+                </tbody>
+              </table>
+
             </td>
             <td class="col-md-6">
-              <img class="catalog-image" height="400" src="Image/suzuki_dr_z4sm_toterreno.png" alt="Suzuki DR-Z4SM Todoterreno">
+              <img class="catalog-image" height="400" src="Image/suzuki_dr_z4sm_toterreno.png"
+              alt="Suzuki DR-Z4SM Todoterreno">
             </td>
           </tr>
         </table>
@@ -220,11 +535,43 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6">
-              <img class="catalog-image" height="400" src="Image/suzuki_gsx_r1000r_depor.png" alt="Suzuki GSX-R1000R Deportiva">
+              <img class="catalog-image" height="400" src="Image/suzuki_gsx_r1000r_depor.png"
+              alt="Suzuki GSX-R1000R Deportiva">
             </td>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">Suzuki GSX R1000R -
+              Especificaciones Tecnicas</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Categoría</th>
+                    <th>Detalle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Motor</td>
+                    <td>4 cilindros en línea, 4 tiempos, DOHC, refrigeración líquida</td>
+                  </tr>
+                  <tr>
+                    <td>Cilindrada</td>
+                    <td>999 cc</td>
+                  </tr>
+                  <tr>
+                    <td>Potencia</td>
+                    <td>199 CV (147 kW) @ 13,200 rpm</td>
+                  </tr>
+                  <tr>
+                    <td>Peso</td>
+                    <td>203 kg (en orden de marcha)</td>
+                  </tr>
+                  <tr>
+                    <td>Tipo</td>
+                    <td>Superbike deportiva homologada para carretera y circuito</td>
+                  </tr>
+                </tbody>
+              </table>
+
             </td>
           </tr>
         </table>
@@ -235,8 +582,38 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">Suzuki GSX S950-
+              Especificaciones Tecnicas</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Característica</th>
+                    <th>Detalle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Motor y cilindrada</td>
+                    <td>4 cilindros en línea, 999 cc, refrigeración líquida (DOHC)</td>
+                  </tr>
+                  <tr>
+                    <td>Potencia disponible</td>
+                    <td>70 kW o versión limitada a 35 kW (compatible con carné A2)</td>
+                  </tr>
+                  <tr>
+                    <td>Par máximo</td>
+                    <td>76 Nm</td>
+                  </tr>
+                  <tr>
+                    <td>Suspensión delantera</td>
+                    <td>Horquilla invertida Kayaba de 43 mm</td>
+                  </tr>
+                  <tr>
+                    <td>Iluminación</td>
+                    <td>Grupo óptico LED con diseño de elementos superpuestos</td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
             <td class="col-md-6">
               <img class="catalog-image" height="400" src="Image/suzuki-gsx-s950_urba.png" alt="Suzuki GSX-S950 Urbana">
@@ -250,11 +627,42 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6">
-              <img class="catalog-image" height="400" src="Image/yamaha_yzf_r15_depor.png" alt="Yamaha YZF-R15 Deportiva">
+              <img class="catalog-image" height="400" src="Image/yamaha_yzf_r15_depor.png"
+              alt="Yamaha YZF-R15 Deportiva">
             </td>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">Yamaha YZF R15 -
+              Especificaciones Tecnicas</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Característica</th>
+                    <th>Detalle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ABS</td>
+                    <td>Sistema de frenos antibloqueo para mayor control y seguridad</td>
+                  </tr>
+                  <tr>
+                    <td>Motor</td>
+                    <td>Monocilíndrico de 155 cc con eficiencia y respuesta deportiva</td>
+                  </tr>
+                  <tr>
+                    <td>Potencia</td>
+                    <td>19.3 HP a 10,000 RPM</td>
+                  </tr>
+                  <tr>
+                    <td>Transmisión</td>
+                    <td>Caja de 6 velocidades</td>
+                  </tr>
+                  <tr>
+                    <td>Iluminación y diseño</td>
+                    <td>Faro LED bifocal central y carenado inspirado en la YZF-R1</td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
           </tr>
         </table>
@@ -265,11 +673,42 @@
         <table class="catalog-table">
           <tr>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">Yamaha FZ-X Connected -
+              Especificaciones Tecnicas</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Característica</th>
+                    <th>Detalle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Motor</td>
+                    <td>Monocilíndrico de 149 cc, 4 tiempos, con inyección electrónica (Fuel Injection)</td>
+                  </tr>
+                  <tr>
+                    <td>Diseño</td>
+                    <td>Estilo Neo-Retro inspirado en scrambler clásicas, con líneas robustas y modernas</td>
+                  </tr>
+                  <tr>
+                    <td>Conectividad</td>
+                    <td>Bluetooth integrado con la app Yamaha Motorcycle Connect para notificaciones y control</td>
+                  </tr>
+                  <tr>
+                    <td>Consumo</td>
+                    <td>Rendimiento aproximado de 130 km por galón, ideal para uso urbano</td>
+                  </tr>
+                  <tr>
+                    <td>Seguridad</td>
+                    <td>Frenos de disco con ABS monocanal y suspensión delantera telescópica</td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
             <td class="col-md-6">
-              <img class="catalog-image" height="400" src="Image/yamaha-fz-x-connected_urba.png" alt="Yamaha FZ-X Connected Urbana">
+              <img class="catalog-image" height="400" src="Image/yamaha-fz-x-connected_urba.png"
+              alt="Yamaha FZ-X Connected Urbana">
             </td>
           </tr>
         </table>
@@ -283,8 +722,38 @@
               <img class="catalog-image" height="400" src="Image/yamaha-yzf-r3_depor.png" alt="Yamaha YZF-R3 Deportiva">
             </td>
             <td class="col-md-6 catalog-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est voluptatem quibusdam, culpa modi?</p>
+              <h2 style="text-align: center;">Yamaha YZF R3 -
+              Especificaciones Tecnicas</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Característica</th>
+                    <th>Detalle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Motor</td>
+                    <td>Bicilíndrico en línea de 321 cc, refrigerado por líquido</td>
+                  </tr>
+                  <tr>
+                    <td>Potencia</td>
+                    <td>42 HP aprox. a 10,750 rpm</td>
+                  </tr>
+                  <tr>
+                    <td>Transmisión</td>
+                    <td>Caja de 6 velocidades</td>
+                  </tr>
+                  <tr>
+                    <td>Seguridad</td>
+                    <td>Sistema de frenos ABS de serie</td>
+                  </tr>
+                  <tr>
+                    <td>Diseño</td>
+                    <td>Carenado aerodinámico inspirado en la YZR-M1 de MotoGP</td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
           </tr>
         </table>
@@ -292,7 +761,7 @@
 
     </section>
   </main>
-  
+
   <footer>
     <div class="container">
       <div class="footer-content">
@@ -304,9 +773,11 @@
           </tr>
           <tr>
             <td>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta sit nemo corporis ipsam nisi veniam
-                sapiente cumque ut quisquam assumenda eligendi numquam maxime impedit est
-                voluptatem quibusdam, culpa modi?</p>
+              <p>
+                Desde nuestros inicios en el Perú, nos hemos dedicado a algo más que vender motos de gama alta:
+                acompañamos a cada cliente en la búsqueda de su moto soñada. Porque para nosotros, tu emoción al girar
+                la llave y sentir la libertad sobre dos ruedas es nuestra verdadera misión.
+              </p>
             </td>
           </tr>
         </table>
@@ -340,71 +811,71 @@
 
   <!-- Bootstrap JS -->
   <script src="Js/bootstrap.bundle.min.js"></script>
-  
+
   <!-- JavaScript adicional -->
   <script>
     // Funcionalidad para el navbar
-    document.addEventListener('DOMContentLoaded', function() {
-      // Añadir funcionalidad de hover a los botones del navbar
-      const navLinks = document.querySelectorAll('.nav-link');
-      navLinks.forEach(link => {
-        link.addEventListener('mouseenter', function() {
-          this.style.transform = 'translateY(-2px)';
-        });
-        link.addEventListener('mouseleave', function() {
-          this.style.transform = 'translateY(0)';
-        });
-      });
+    document.addEventListener('DOMContentLoaded', function () {
+    // Añadir funcionalidad de hover a los botones del navbar
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+    link.addEventListener('mouseenter', function () {
+    this.style.transform = 'translateY(-2px)';
+    });
+    link.addEventListener('mouseleave', function () {
+    this.style.transform = 'translateY(0)';
+    });
+    });
 
-      // Añadir funcionalidad al formulario de búsqueda
-      const searchForm = document.querySelector('.search-form');
-      const searchInput = document.querySelector('.search-input');
-      
-      searchInput.addEventListener('focus', function() {
-        this.style.boxShadow = '0 0 10px rgba(0,123,255,0.25)';
-      });
-      
-      searchInput.addEventListener('blur', function() {
-        this.style.boxShadow = 'none';
-      });
+    // Añadir funcionalidad al formulario de búsqueda
+    const searchForm = document.querySelector('.search-form');
+    const searchInput = document.querySelector('.search-input');
 
-      // Añadir funcionalidad al formulario de suscripción
-      const suscripcionForm = document.querySelector('.suscripcion-form form');
-      if (suscripcionForm) {
-        suscripcionForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          const nombre = document.getElementById('nombre').value;
-          const apellidos = document.getElementById('apellidos').value;
-          const email = document.getElementById('email').value;
-          
-          if (nombre && apellidos && email) {
-            alert('¡Gracias por suscribirte, ' + nombre + ' ' + apellidos + '!');
-            this.reset();
-          } else {
-            alert('Por favor, completa todos los campos.');
-          }
-        });
-      }
+    searchInput.addEventListener('focus', function () {
+    this.style.boxShadow = '0 0 10px rgba(0,123,255,0.25)';
+    });
 
-      // Añadir funcionalidad de zoom a las imágenes
-      const images = document.querySelectorAll('.catalog-image');
-      images.forEach(img => {
-        img.addEventListener('click', function() {
-          // Aquí podrías abrir un modal con la imagen ampliada
-          console.log('Imagen clickeada: ' + this.alt);
-        });
-      });
+    searchInput.addEventListener('blur', function () {
+    this.style.boxShadow = 'none';
+    });
+
+    // Añadir funcionalidad al formulario de suscripción
+    const suscripcionForm = document.querySelector('.suscripcion-form form');
+    if (suscripcionForm) {
+    suscripcionForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const apellidos = document.getElementById('apellidos').value;
+    const email = document.getElementById('email').value;
+
+    if (nombre && apellidos && email) {
+    alert('¡Gracias por suscribirte, ' + nombre + ' ' + apellidos + '!');
+    this.reset();
+    } else {
+    alert('Por favor, completa todos los campos.');
+    }
+    });
+    }
+
+    // Añadir funcionalidad de zoom a las imágenes
+    const images = document.querySelectorAll('.catalog-image');
+    images.forEach(img => {
+    img.addEventListener('click', function () {
+    // Aquí podrías abrir un modal con la imagen ampliada
+    console.log('Imagen clickeada: ' + this.alt);
+    });
+    });
     });
 
     // Funcionalidad para dispositivos móviles
     function handleResize() {
-      if (window.innerWidth <= 768) {
-        // Ajustes para móviles
-        const catalogSections = document.querySelectorAll('.catalog-section');
-        catalogSections.forEach(section => {
-          section.style.margin = '1rem 0';
-        });
-      }
+    if (window.innerWidth <= 768) {
+    // Ajustes para móviles
+    const catalogSections = document.querySelectorAll('.catalog-section');
+    catalogSections.forEach(section => {
+    section.style.margin = '1rem 0';
+    });
+    }
     }
 
     window.addEventListener('resize', handleResize);
