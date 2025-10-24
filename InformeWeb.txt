@@ -1,0 +1,123 @@
+INFORME TÉCNICO: DESARROLLO DE LA PÁGINA WEB “MOTOS PERÚ”
+
+1. Introducción
+
+La página web “Motos Perú” ha sido desarrollada como un catálogo digital de motocicletas de diversas marcas y categorías (deportivas, urbanas, todoterreno, etc.). Su objetivo principal es presentar de forma clara, atractiva y accesible las especificaciones técnicas de los modelos disponibles, facilitando la navegación y la búsqueda de información para los usuarios interesados en adquirir una motocicleta.
+
+El desarrollo combina HTML5, CSS3, Bootstrap 5 y JavaScript puro, sin dependencias externas adicionales, lo que garantiza un rendimiento eficiente y una experiencia de usuario fluida en dispositivos móviles y de escritorio.
+
+2. Estructura General del Documento
+
+2.1. Declaración y Metadatos
+- <!DOCTYPE html>: Indica que el documento sigue el estándar HTML5.
+- <meta charset="UTF-8">: Define la codificación de caracteres como UTF-8 para soportar tildes y caracteres especiales en español.
+- <meta name="viewport" ...>: Asegura que la página sea responsive en dispositivos móviles.
+- <meta name="description"> y <meta name="keywords">: Optimización básica para SEO.
+- <link rel="icon">: Establece el ícono de la pestaña del navegador.
+- <title>: Título visible en la pestaña del navegador.
+
+3. Uso de Bootstrap 5
+
+Bootstrap se utiliza para lograr un diseño responsive, moderno y accesible. A continuación, se detallan las clases y componentes más relevantes:
+
+3.1. Clases de Layout y Grid
+- container-fluid y container: 
+  - container-fluid en <header> permite que el encabezado ocupe todo el ancho de la pantalla.
+  - container en <main> y <footer> centra el contenido con márgenes laterales responsivos.
+- row y col-*: 
+  - Se usan para alinear elementos en filas y columnas (ej. col-lg-8, col-md-5), adaptando el diseño según el tamaño de la pantalla.
+  - align-items-center: Centra verticalmente los elementos dentro de una fila.
+  - text-center: Centra horizontalmente el texto.
+
+3.2. Componentes de Navegación
+- navbar, navbar-nav, nav-link: 
+  - Aunque no se usa el componente completo de navbar de Bootstrap (sin navbar-expand ni toggler), las clases permiten un estilo consistente con los enlaces de navegación.
+  - Los enlaces son simples <a> con clase nav-link, lo que hereda estilos de color y espaciado de Bootstrap.
+
+3.3. Formularios
+- form-control: Estiliza los campos de entrada (<input>) con bordes, padding y tipografía consistentes.
+- btn, btn-primary, btn-light: Botones estilizados según la paleta de Bootstrap.
+- d-flex, justify-content-end: Utilizan Flexbox para alinear el formulario de búsqueda a la derecha en pantallas grandes.
+
+3.4. Espaciado y Tipografía
+- my-5, mb-4, mb-3: Márgenes verticales (my = margin-y, mb = margin-bottom).
+- display-4: Tamaño grande de título para el encabezado principal.
+- lead: Estilo para párrafos destacados (más grandes y con énfasis).
+- text-decoration-none: Elimina el subrayado de los enlaces.
+
+4. Estilos Personalizados
+
+Se incluyen estilos CSS personalizados mediante una etiqueta <style> en el <head> para ajustar la apariencia de las tablas de especificaciones:
+
+- border-collapse: collapse y eliminación de bordes: logran un diseño limpio y minimalista.
+- padding: 8px y text-align: left: mejoran la legibilidad del contenido.
+- background-color: transparent en thead th: evita fondos por defecto que podrían interferir con el diseño general.
+
+Además, se enlaza un archivo externo CSS/style.css para estilos globales no mostrados en el código (posiblemente colores de marca, fuentes personalizadas, etc.).
+
+5. Lógica de Programación en JavaScript
+
+El script al final del documento agrega interactividad sin recargar la página. Se utiliza JavaScript puro (sin frameworks) y se ejecuta tras la carga completa del DOM (DOMContentLoaded).
+
+5.1. Efectos de Interacción en el Navbar
+navLinks.forEach(link => {
+  link.addEventListener('mouseenter', ...) // Eleva ligeramente el enlace
+  link.addEventListener('mouseleave', ...) // Restaura posición original
+});
+- Propósito: Mejorar la experiencia de usuario con microinteracciones visuales.
+- Técnica: Manipulación directa de la propiedad style.transform.
+
+5.2. Efecto Visual en el Campo de Búsqueda
+searchInput.addEventListener('focus', ...) // Agrega sombra
+searchInput.addEventListener('blur', ...)  // Quita sombra
+- Propósito: Dar retroalimentación visual al usuario al interactuar con el campo.
+
+5.3. Validación del Formulario de Suscripción
+suscripcionForm.addEventListener('submit', function(e) {
+  e.preventDefault(); // Evita el envío real del formulario
+  // Valida campos obligatorios
+  // Muestra alerta de éxito o error
+});
+- Propósito: Simular un registro sin conexión a backend (ideal para prototipos o demostraciones).
+- Ventaja: Evita redirecciones innecesarias y mejora la usabilidad.
+
+5.4. Funcionalidad de Imágenes (Zoom Futuro)
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    console.log('Imagen clickeada...');
+    // Aquí se podría implementar un modal con la imagen ampliada
+  });
+});
+- Propósito: Preparar la interfaz para una futura funcionalidad de visualización ampliada (lightbox).
+
+5.5. Ajustes para Dispositivos Móviles
+function handleResize() {
+  if (window.innerWidth <= 768) {
+    // Ajusta márgenes en secciones del catálogo
+  }
+}
+- Propósito: Asegurar que el espaciado sea adecuado en pantallas pequeñas.
+- Nota: Este enfoque es redundante con Bootstrap (que ya es responsive), pero podría usarse para ajustes muy específicos no cubiertos por las clases de utilidad.
+
+6. Observaciones sobre la Estructura del Contenido
+
+- Uso de tablas para layout: 
+  - Aunque funcional, el uso de <table> para alinear imagen y texto no es semánticamente correcto. Lo recomendable sería usar Grid o Flexbox con <div>.
+  - Esto puede afectar la accesibilidad y el SEO, ya que las tablas deben usarse solo para datos tabulares (lo cual sí se cumple en las tablas internas de especificaciones).
+  
+- Repetición de código: 
+  - Cada producto se repite manualmente. En un entorno real, esto debería generarse dinámicamente desde una base de datos o un archivo JSON mediante JavaScript o un sistema de plantillas.
+
+7. Conclusión
+
+La página “Motos Perú” demuestra un uso efectivo de Bootstrap 5 para lograr un diseño responsive y visualmente atractivo, complementado con JavaScript para mejorar la interactividad. Aunque presenta algunas prácticas mejorables (como el uso de tablas para layout), cumple su propósito como catálogo informativo.
+
+Recomendaciones futuras:
+1. Reemplazar las tablas de layout por contenedores con display: flex o grid.
+2. Implementar carga dinámica de productos desde un archivo JSON.
+3. Añadir un modal real para el zoom de imágenes.
+4. Conectar el formulario de suscripción a un backend real o servicio de email marketing.
+
+Elaborado por:  
+Zambrano Puma Matias Alonso
+Fecha: 23 de octubre de 2025
