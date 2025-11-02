@@ -1,0 +1,193 @@
+INFORME DETALLADO SOBRE EL DESARROLLO DE LA PÁGINA WEB "MOTOS PERÚ"
+
+1. OBJETIVO DEL PROYECTO
+------------------------
+El objetivo fue mejorar la página web de "Motos Perú" para que cumpliera con los siguientes requisitos:
+- Reemplazar las tablas por grillas de Bootstrap
+- Diseñar colores atractivos para personas de 18 a 50 años
+- Crear un diseño minimalista e intuitivo
+- Implementar animaciones al desplazarse hacia abajo
+- Organizar el contenido en archivos separados
+- Hacer que la navbar sea horizontal y ocultable al desplazarse
+
+2. ESTRUCTURA DE ARCHIVOS
+-------------------------
+El proyecto se divide en los siguientes archivos:
+
+HTML:
+- index.html - Página principal con todo el contenido
+
+CSS:
+- CSS/style.css - Estilos generales del sitio
+- CSS/catalog.css - Estilos específicos para el catálogo de productos
+
+JavaScript:
+- JS/main.js - Funcionalidades principales y navbar ocultable
+- JS/scroll-animation.js - Animaciones al desplazarse
+
+3. ETIQUETAS HTML UTILIZADAS Y RAZONES
+--------------------------------------
+
+3.1 Etiquetas estructurales:
+- <!DOCTYPE html> - Define el documento como HTML5
+- <html lang="es"> - Establece el idioma español
+- <head> - Contiene metadatos y enlaces a recursos
+- <meta charset="UTF-8"> - Define la codificación de caracteres UTF-8
+- <meta name="viewport"> - Hace la página responsive
+- <meta name="description"> - Mejora SEO con descripción del sitio
+- <meta name="keywords"> - Palabras clave para motores de búsqueda
+- <link rel="icon"> - Define el favicon del sitio
+- <title> - Título de la página para SEO
+
+3.2 Etiquetas de contenido:
+- <header> - Contiene el encabezado con logo y navegación
+- <nav> - Define la navegación principal
+- <main> - Contiene el contenido principal de la página
+- <section> - Agrupa contenido relacionado
+- <div> - Contenedores genéricos para estructura
+- <h1>, <h2> - Títulos jerárquicos para SEO
+- <p> - Párrafos de texto
+- <img> - Imágenes de los productos
+- <table>, <tbody>, <tr>, <th>, <td> - Tablas para especificaciones técnicas
+- <footer> - Pie de página con información adicional
+
+3.3 Etiquetas de formulario:
+- <form> - Contenedor de formularios
+- <input> - Campos de entrada de datos
+- <label> - Etiquetas para campos de formulario
+- <button> - Botones interactivos
+
+3.4 Etiquetas de Bootstrap:
+- <div class="container"> - Contenedor con márgenes
+- <div class="row"> - Fila para sistema de grillas
+- <div class="col-*"> - Columnas para diseño responsive
+- <nav class="navbar"> - Componente de navegación de Bootstrap
+- <form class="search-form"> - Estilos de Bootstrap para formularios
+- <img class="img-fluid"> - Imágenes responsive
+- <table class="table"> - Tablas estilizadas de Bootstrap
+
+4. ESTILOS CSS ORGANIZADOS
+--------------------------
+
+4.1 CSS/style.css (Estilos generales):
+- body: Fuente principal, colores y espaciado general
+- header: Gradientes, sombras y posición fija
+- navbar: Estilos para navegación horizontal
+- .navbar-nav: Distribución horizontal de enlaces
+- .nav-link: Efectos hover y animaciones
+- search-input/search-btn: Estilos para formulario de búsqueda
+- main: Espaciado superior para compensar navbar fija
+- footer: Estilos para pie de página
+- Responsive: Ajustes para diferentes tamaños de pantalla
+
+4.2 CSS/catalog.css (Estilos específicos del catálogo):
+- .catalog-section: Contenedores con gradientes y sombras
+- .catalog-image: Estilos para imágenes de productos
+- .table: Estilos para tablas de especificaciones
+- Animaciones: Transiciones y efectos visuales
+- footer: Estilos específicos para pie de página del catálogo
+
+5. LÓGICA JAVASCRIPT IMPLEMENTADA
+---------------------------------
+
+5.1 JS/main.js:
+- lastScrollTop: Variable para rastrear posición de scroll
+- navbar: Referencia al elemento de la barra de navegación
+- navbar-expand-lg: Implementación de navegación horizontal
+- Función de scroll: Detecta dirección de desplazamiento
+- Lógica de ocultado: 
+  * Si scrollTop > lastScrollTop y > 100px → oculta navbar
+  * Si scrollTop < lastScrollTop → muestra navbar
+- Eventos de hover: Efectos en enlaces de navegación
+- Formularios: Validación y manejo de eventos
+- Imágenes: Manejo de errores de carga
+- Responsive: Ajustes para dispositivos móviles
+
+5.2 JS/scroll-animation.js:
+- isElementInViewport: Verifica si elemento está visible
+- handleScroll: Maneja visibilidad de elementos
+- querySelectorAll: Selecciona elementos para animación
+- classList.add/remove: Agrega/quita clases para animaciones
+- window.addEventListener: Escucha eventos de scroll
+
+6. ESTILOS Y DISEÑO
+--------------------
+
+6.1 Paleta de colores:
+- Azul (#3498db): Color principal de marca
+- Gris oscuro (#2c3e50): Color de texto principal
+- Gris claro (#ecf0f1): Color de texto secundario
+- Gradientes: Combinación de azul y gris para profundidad
+
+6.2 Tipografía:
+- 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif: Fuente moderna y legible
+- Peso 500-700: Mayor legibilidad en pantallas
+- Tamaños responsive: Ajuste automático según dispositivo
+
+6.3 Espaciado:
+- padding/margin: Consistentes para buena jerarquía visual
+- border-radius: Elementos redondeados para aspecto moderno
+- box-shadow: Profundidad y separación visual entre elementos
+
+7. RESPONSIVE DESIGN
+--------------------
+
+7.1 Breakpoints:
+- Mobile-first: Estilos base para móviles
+- Tablet: @media (max-width: 768px)
+- Desktop: @media (max-width: 992px)
+
+7.2 Adaptaciones:
+- Navbar: Horizontal en desktop, ajuste en mobile
+- Contenedores: Ajuste de columnas según tamaño
+- Espaciado: Modificación para diferentes resoluciones
+- Imágenes: img-fluid para mantener proporción
+
+8. ANIMACIONES Y EFECTOS
+------------------------
+
+8.1 Transiciones CSS:
+- transform: Movimiento suave de elementos
+- opacity: Efectos de aparición/desaparición
+- transition: Duración y tipo de transición
+- box-shadow: Efectos de elevación
+
+8.2 Efectos JavaScript:
+- Animaciones de scroll: Aparición de elementos
+- Navbar ocultable: Movimiento vertical
+- Hover effects: Interacción con elementos
+- Formularios: Efectos de validación
+
+9. MEJORAS IMPLEMENTADAS
+------------------------
+
+9.1 Reemplazo de tablas:
+- Antes: Tablas HTML tradicionales
+- Ahora: Grillas de Bootstrap con divs
+- Ventajas: Mayor flexibilidad y responsive
+
+9.2 Navbar mejorada:
+- Antes: Posición estática, vertical
+- Ahora: Fija, horizontal, ocultable
+- Ventajas: Ahorro de espacio, mejor experiencia
+
+9.3 Animaciones:
+- Antes: Sin animaciones
+- Ahora: Efectos de scroll y hover
+- Ventajas: Mejor experiencia de usuario
+
+9.4 Organización de archivos:
+- Antes: Todo en un solo archivo
+- Ahora: Separación por funcionalidad
+- Ventajas: Mayor mantenibilidad
+
+10. CONCLUSIONES
+-----------------
+
+El proyecto logró transformar completamente la página web "Motos Perú" implementando:
+- Un diseño moderno y atractivo para el público objetivo
+- Una experiencia de usuario intuitiva y fluida
+- Un sistema de navegación eficiente con navbar ocultable
+- Un código bien estructurado y mantenible
+- Funcionalidades modernas como animaciones y responsive design
+- Cumplimiento de estándares web y buenas prácticas de desarrollo
