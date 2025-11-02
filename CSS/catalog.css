@@ -1,0 +1,177 @@
+/* Estilos para el catálogo de productos */
+.catalog-section {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalog-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.catalog-image {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  transition: transform 0.3s ease;
+}
+
+.catalog-image:hover {
+  transform: scale(1.02);
+}
+
+.catalog-text h2 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.catalog-text h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #3498db, #2c3e50);
+  border-radius: 2px;
+}
+
+.table {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.table th {
+  background-color: #3498db !important;
+  color: white;
+  font-weight: 600;
+  padding: 12px 15px;
+  border: none;
+}
+
+.table td {
+  padding: 12px 15px;
+  border: none;
+  vertical-align: middle;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+/* Animación de entrada */
+.catalog-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.catalog-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer estilizado */
+footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%);
+  color: white;
+  padding: 40px 0 20px;
+  margin-top: 50px;
+}
+
+footer h4 {
+  color: #3498db;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+footer h4:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #3498db;
+  border-radius: 2px;
+}
+
+footer p {
+  line-height: 1.8;
+  color: #ecf0f1;
+}
+
+.suscripcion-form {
+  margin-top: 40px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.suscripcion-form h2 {
+  color: #3498db;
+  margin-bottom: 30px;
+}
+
+.suscripcion-form .form-label {
+  color: #ecf0f1;
+  font-weight: 500;
+}
+
+.suscripcion-form .form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.suscripcion-form .form-control:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #3498db;
+  color: white;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.suscripcion-form .btn {
+  background: linear-gradient(to right, #3498db, #2c3e50);
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.suscripcion-form .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .catalog-section {
+    padding: 20px;
+  }
+  
+  .catalog-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  .table th, .table td {
+    padding: 8px 10px;
+  }
+}
